@@ -73,7 +73,7 @@
 
 .info-section__btn--close::before {
   content: "";
-  background-image: url(/img/image-hide.svg);
+  background-image: url(./static/image-hide.svg);
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -86,7 +86,7 @@
   position: relative;
   width: 24px;
   height: 24px;
-  background-image: url(/img/text-decor.png);
+  background-image: url(./static/text-decor.png);
   vertical-align: top; }
 
 .info-section__text-elem {
@@ -356,7 +356,7 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
-    background-image: url(/img/icon-btn.svg);
+    background-image: url(./static/icon-btn.svg);
     background-repeat: no-repeat;
     background-position: 50%; }
   .swiper-slide__btn-price {
@@ -364,7 +364,7 @@
     height: 32px;
     border-radius: 30px;
     background-color: #FF3E79;
-    background-image: url(/img/icon-price_btn.svg);
+    background-image: url(./static/icon-price_btn.svg);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     position: static; }
@@ -414,12 +414,12 @@
   margin-bottom: 32px; }
   .cards-more::before {
     content: "";
-    background-image: url(/img/icon-more.svg);
+    background-image: url(./static/icon-more.svg);
     width: 24px;
     height: 24px; }
   .cards-more--close::before {
     content: "";
-    background-image: url(/img/image-hide.svg);
+    background-image: url(./static/image-hide.svg);
     width: 24px;
     height: 24px; }
   @media (max-width: 768px) {
@@ -618,7 +618,7 @@
 .card-technique {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-npm start;
+  align-items: flex-start;
   box-sizing: border-box;
   width: 31%;
   height: 160px;
