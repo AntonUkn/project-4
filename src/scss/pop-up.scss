@@ -1,0 +1,159 @@
+@import 'media-breakpoints.scss';
+
+.pop-up {
+  position: absolute;
+  top: 0;
+  left:0;
+  background-color: $сolor-white;
+  height: 100vh;
+  overflow-x: hidden;
+  z-index: 100;
+  transition:0.3s;
+  
+
+ 
+  &__container {
+    display: flex;
+    position:fixed;
+    flex-direction: column;
+    padding: 24px 24px 32px 24px;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: $сolor-white;
+    box-sizing: border-box;
+    overflow-y:scroll;
+    scrollbar-width: none;
+    width: 320px;
+    transition: 0.5s;
+  }
+
+  
+  
+ 
+
+  @include mobile() {
+    width:100vw;
+    &--hidden {
+      left:-780px; 
+    }
+
+    &__container {
+      width: 100vw;
+    }
+
+  }
+
+  @include tablet() {
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    &--hidden {
+      left:-900px;
+      transition:1s; 
+      opacity: 1;
+}
+  }
+
+  @include desktop() {
+    margin-left: -320px;
+    .btn--icon-hide {
+      display: none;
+    }
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 57px;
+    height: 40px;
+    align-content: flex-end;
+  }
+
+  &__head-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+  }
+
+  &__navigation-link {
+    text-decoration: none;
+    font-family: TTLakes, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color:$text;
+    font-weight: 500;
+  }
+
+  &__navigation-link--active {
+    color: $color-text-gray;
+  }
+
+  &__navigation-link--active::before,
+  &__navigation-link:hover::before,
+  &__navigation-link:focus::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background-color:#41F6D7;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    left: 0;
+  }
+
+  &__navigation-link:hover,
+  &__navigation-link:focus {
+    color: $color-text-gray;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block-btn {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__phone-link {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  &__block-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__lang {
+    display: flex;
+    gap: 7px;
+  }
+
+  &__lang-link--active {
+    color: $color-text-gray;
+  }
+
+  &__email-link {
+    font-weight: 500;
+  }
+
+}
+

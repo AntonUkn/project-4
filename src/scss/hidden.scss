@@ -1,0 +1,22 @@
+@import 'media-breakpoints.scss';
+
+.hidden {
+    @include mobile {
+    &:nth-child(n + 10) {
+        display: none;
+      }
+    }
+
+    @include tablet {
+        &:nth-child(n + 7) {
+            display: none;
+          }
+        }
+
+        @include desktop {
+            &:nth-child(n + 10) {
+                display: none;
+              }
+            }
+}
+

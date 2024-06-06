@@ -1,0 +1,46 @@
+@import 'media-breakpoints.scss';
+
+.swiper-pagination-bullet {
+    @include mobile() {
+    width: 12px;
+    height: 12px;
+    background-color: #dddddd;
+    opacity: 1;
+  }
+}
+
+@include mobile() {
+.swiper-pagination-bullet-active {
+    background-color: #b5b6bc;
+  }
+}
+
+@include mobile() {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin-right: 12px;
+  }
+}
+
+@include mobile() {
+  .swiper-pagination {
+    position: static;
+  }
+}
+
+  @include tablet() {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@include desktop() {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+
+
+

@@ -1,0 +1,45 @@
+@import 'media-breakpoints.scss';
+
+.footer {
+    gap:0;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    border-top:1px solid $color-border;
+    align-items:flex-start;
+    justify-content: space-between;
+
+
+    &__elem {
+        color:$color-text-gray;
+       font-style:TTLakes,sans-serif;
+       width: 35%;
+    }
+
+    &__elem:nth-child(3) {
+        text-align: end;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap:16px;
+        padding-top:16px;
+        padding-bottom:19px;
+        align-items:center;
+        &__elem {
+            text-align: center;
+            width: auto;
+        }
+        &__elem:nth-child(3) {
+            text-align: center;
+        }
+
+
+    }
+
+    @include tablet {
+        padding-top:32px;
+        padding-bottom:41px;
+    }
+}
+

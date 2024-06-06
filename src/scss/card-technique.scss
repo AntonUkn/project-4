@@ -1,0 +1,40 @@
+.card-technique {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-npm start;
+  box-sizing: border-box;
+  width: 31%;
+  height: 160px;
+  border: 1px solid $bgColor;
+  border-radius: 5px;
+  background-color:$сolor-white;
+  padding: 16px 16px;
+  font-weight: 500;
+  margin:0;
+ 
+
+  @include tablet {
+    flex-shrink: 1;
+    height: 160px;
+
+
+    &--hidden:nth-child(n + 4) {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    
+    &--hidden:nth-child(n + 7) {
+      display: none;
+    }
+  }
+
+ 
+
+  }
+
+
+
+
+

@@ -1,0 +1,5 @@
+import '../scss/style.scss'
+import '../js/swiper.js'
+import '../js/pop-up.js'
+import '../js/modal-feedback.js'
+import '../js/info-section.js'

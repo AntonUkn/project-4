@@ -1,0 +1,14 @@
+@import 'media-breakpoints.scss';
+
+.menu-right {
+  display: flex;
+  gap: 16px;
+
+  @include mobile() {
+    align-self: flex-end;
+  }
+
+  @include desktop() {
+    align-self: flex-end;
+  }
+}

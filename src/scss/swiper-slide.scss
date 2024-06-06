@@ -1,0 +1,83 @@
+.swiper-slide {
+  display: flex;
+  align-items:center;
+  box-sizing: border-box;
+  height: 70px;
+  border: 1px solid $color-decorHeader;
+  border-radius: 5px;
+  background-color: $сolor-white;
+  padding:0 16px;
+  
+  
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:$сolor-white;
+    border: 2px solid $сolor-btn;
+    justify-self: flex-end;
+    outline: none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+
+    background-image: url(/img/icon-btn.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &__btn-price {
+    width: 119px;
+    height: 32px;
+    border-radius:30px;
+    background-color: $сolor-btn;
+
+    background-image: url(/img/icon-price_btn.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    position:static;
+
+   
+    
+  }
+
+  &__btn-price  {
+    display: flex;
+    color:$color-decorHeader;
+    font-size: 12px;
+    letter-spacing: -0.15px;
+    font-weight: 700;
+    font-family: TTLakes,sans-serif;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding:3px 12px;
+    
+    
+  
+   
+  }
+  
+
+  &__btn:hover {
+    background-color:$сolor-hover;
+  }
+
+  @include tablet {
+    width: 31%;
+    height: 72px;
+    margin:0 !important;
+  }
+
+  @include desktop {
+    width: 31%;
+    height: 72px;
+    margin:0 !important;
+  }
+
+  &:last-child {
+    align-self: middle;
+  }
+}

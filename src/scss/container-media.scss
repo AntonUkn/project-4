@@ -1,0 +1,27 @@
+@import 'media-breakpoints.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  	
+
+ 
+
+  @include mobile() {
+    gap: 24px;
+    padding: 24px 16px 24px 16px;
+  }
+
+  @include tablet() {
+    gap: 32px;
+    padding: 24px;
+    
+  }
+
+  @include desktop() {
+    gap: 8px;
+    padding: 42px 34px 50px 34px;
+    position: relative;
+   
+  }
+}

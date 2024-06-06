@@ -1,0 +1,157 @@
+@import 'media-breakpoints.scss';
+
+.info-section {
+  
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: TTLakes, 'sans-serif';
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: inherit;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+    margin-bottom:20px;
+  }
+
+  &__btn--close::before {
+    content: "";
+    background-image: url(/img/image-hide.svg);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+
+
+  &__btn--decor::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/text-decor.png);
+    vertical-align: top;
+  }  
+
+  &__text-elem {
+    margin-top: 0;
+  
+  }
+
+  @include tablet() {
+    display: flex;
+    flex-direction: row;
+
+    gap: 48px;
+    line-height: 20px;
+    font-size: 14px;
+
+    font-weight: 400;
+
+    &__image {
+      width: 50%;
+      height: 100%;
+      border-radius: 5px;
+      flex-grow: 1;
+    }
+
+    &__discription {
+      width: 50%;
+      height: 100%;
+      letter-spacing: 0.2px;
+    }
+
+    &__text-one {
+      margin-top: 0;
+    }
+
+    &__desktop-hidden {
+      display: none;
+    }
+
+    &__hidden:nth-child(3) {
+      display: none;
+    }
+
+  }
+
+  @include desktop() {
+    display: flex;
+    flex-direction: row;
+    gap: 0 36px;
+    line-height: 20px;
+    font-size: 14px;
+
+    font-weight: 400;
+    font-size: 14px;
+
+    &__image {
+      width: 50%;
+      height: 100%;
+      max-height: 307px;
+      position: relative;
+      left: 0;
+      border-radius: 5px;
+    }
+
+    &__text-one {
+      margin-bottom: 0;
+    }
+    &__discription {
+      display: flex;
+      flex-direction: column;
+  }
+
+  &__hidden:nth-child(3) {
+    display: none;
+  }
+}
+
+  @include mobile() {
+    &__discription {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      font-family: TTLakes, 'sans-serif';
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &__image {
+      width: 100vw;
+      min-height: 176px;
+      margin-left: -16px;
+    }
+  
+
+  &__btn {
+    margin-bottom: 16px;
+  }
+
+  &__hidden:nth-child(2) {
+    display: none;
+  }
+
+  &__hidden:nth-child(3) {
+    display: none;
+  }
+
+  &__text-one {
+    margin: 0;
+  }
+
+ 
+}
+
+}

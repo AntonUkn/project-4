@@ -1,0 +1,31 @@
+@import 'media-breakpoints.scss';
+
+.logo-link {
+  display: flex;
+  gap: 16px;
+  align-self: center;
+  
+  @include mobile() {
+    &::after {
+      content: '';
+      width: 2px;
+      height: 32px;
+      background-color: $color-decorHeader;
+      border-radius: 1px;
+      align-self: center;
+    }
+  }
+
+  @include tablet() {
+    gap: 20px;
+
+  &::before {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: $color-decorHeader;
+    border-radius: 1px;
+    align-self: center;
+  }
+}
+}

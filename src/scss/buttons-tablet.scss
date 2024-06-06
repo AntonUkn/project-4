@@ -1,0 +1,22 @@
+@import 'media-breakpoints.scss';
+
+.buttons-tablet {
+  @include mobile() {
+    display: none;
+  }
+  @include tablet() {
+    display: flex;
+    gap: 16px;
+
+    &::after {
+      content: "";
+      display: flex;
+      width: 2px;
+      height: 32px;
+      background-color:$bgColor;
+      border-radius: 1px;
+      align-self: center;
+      margin: 0 4px 0 4px;
+    }
+  }
+}

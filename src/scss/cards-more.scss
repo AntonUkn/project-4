@@ -1,0 +1,40 @@
+@import 'media-breakpoints.scss';
+
+.cards-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: TTLakes, "sans-serif";
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: inherit;
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+    margin-left:32px;
+    margin-bottom: 32px;
+    
+
+    &::before {
+      content: "";
+      background-image: url(/img/icon-more.svg);
+      width: 24px;
+      height: 24px;
+    }
+
+    &--close::before { 
+      content: "";
+    background-image: url(/img/image-hide.svg);
+    width: 24px;
+    height: 24px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+  }

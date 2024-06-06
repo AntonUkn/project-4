@@ -1,0 +1,28 @@
+@import 'media-breakpoints.scss';
+
+.swiper-wrapper {
+  display: flex;
+  padding: 16px;
+  width: 30%;
+
+  @include tablet() {
+    padding: 24px;
+    flex-wrap: wrap;
+   
+    row-gap:24px;
+    width:auto;
+    gap:16px;
+    row-gap:15px;
+  }
+
+  @include desktop() {
+    display: flex;
+    row-gap:32px;
+    flex-wrap: wrap;
+    padding:24px 32px;
+    width:auto;
+   gap:16px;
+   
+  
+  }
+}

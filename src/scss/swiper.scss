@@ -1,0 +1,14 @@
+@import 'media-breakpoints.scss';
+
+.swiper {
+    &__header {
+        background-color:$сolor-white;
+        width: 100vw;
+        border-top: 1px solid $color-border;
+      }
+
+      @include mobile {
+        margin-bottom: 24px;
+      }
+
+}

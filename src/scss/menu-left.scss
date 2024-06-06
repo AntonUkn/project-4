@@ -1,0 +1,12 @@
+@import 'media-breakpoints.scss';
+
+
+.menu-left {
+    display: flex;
+    gap: 16px;
+
+    @include tablet() {
+        gap: 20px;
+    }
+
+  }

@@ -1,0 +1,65 @@
+.btn {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    background-color:$сolor-btn;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;  
+    
+    
+    &:hover {
+      background-color:$сolor-hover;
+    }
+
+    &--icon-find {
+      background-image: url(../img/icon-find.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--icon-burger {
+      background-image: url(../img/icon-BURGER.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    &--icon-check {
+      background-image: url(../img/icon-check.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    &--icon-search {
+      background-image: url(../img/icon-search.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    &--icon-phone {
+      background-image: url(../img/icon-phone.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    &--icon-chat {
+      background-image: url(../img/icon-chat.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    &--icon-profile {
+      background-image: url(../img/icon-profile.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    &--icon-hide {
+      background-image: url(../img/icon-hide.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  }

@@ -1,0 +1,18 @@
+.title {
+    margin: 0;
+    font-family: "TTLakes", "sans-serif";
+    font-weight: 700;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 40px;
+      background-color:$color-title-decor;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+  }

@@ -1,0 +1,12 @@
+@import 'media-breakpoints.scss';
+@import 'color.scss';
+.header {
+    min-width: 320px;
+    height: 88px;
+    border-bottom: 2px solid  $color-border;
+    background-color: $сolor-white;
+    
+    @include  desktop() {
+      display: none;
+    }
+  }

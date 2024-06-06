@@ -1,0 +1,8 @@
+@import 'media-breakpoints.scss';
+
+@include desktop() {
+  .desktop-title {
+    display: flex;
+    justify-content: space-between;
+  }
+}

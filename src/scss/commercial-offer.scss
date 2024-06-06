@@ -1,0 +1,47 @@
+@import 'media-breakpoints.scss';
+
+.commercial-offer {
+    padding-top:0;
+    padding-bottom:0;
+    gap: 16px;
+   
+
+    &__text {
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        max-width: 421px;
+    }
+
+    &__link {
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        
+    }
+
+    &__link::after {
+        content:'';
+        background-image: url('../img/commercial-btn.svg');
+        background-repeat: no-repeat;
+        background-position: center ;
+        height: 24px;
+        width: 27.5px;
+        position:absolute;
+        display: inline-block;
+        vertical-align: bottom;
+        cursor: pointer;
+        
+    }
+
+    @include mobile {
+        margin-bottom:40px;
+    }
+
+    @include tablet {
+        margin-bottom:47px;
+    }
+    @include desktop {
+        margin-bottom:50px;
+    }
+}
