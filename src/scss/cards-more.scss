@@ -21,14 +21,14 @@
 
     &::before {
       content: "";
-      background-image: url(/img/icon-more.svg);
+      background-image: url(../img/icon-more.svg);
       width: 24px;
       height: 24px;
     }
 
     &--close::before { 
       content: "";
-    background-image: url(/img/image-hide.svg);
+    background-image: url(../img/image-hide.svg);
     width: 24px;
     height: 24px;
     }
