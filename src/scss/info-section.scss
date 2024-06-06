@@ -22,7 +22,7 @@
 
   &__btn--close::before {
     content: "";
-    background-image: url(./img/image-hide.svg);
+    background-image: url(../img/image-hide.svg);
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -38,7 +38,7 @@
     position: relative;
     width: 24px;
     height: 24px;
-    background-image: url(./img/text-decor.png);
+    background-image: url(../img/text-decor.png);
     vertical-align: top;
   }  
 
